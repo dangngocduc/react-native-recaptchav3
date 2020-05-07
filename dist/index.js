@@ -10,7 +10,7 @@ class ReCaptchaV3 extends React.PureComponent {
         };
     }
     render() {
-        return (React.createElement(ReCaptchaComponent_1.default, { ref: ref => this._captchaRef = ref, captchaDomain: this.props.captchaDomain, siteKey: this.props.siteKey, onReceiveToken: (token) => {
+        return (React.createElement(ReCaptchaComponent_1.default, { ref: ref => this._captchaRef = ref, captchaDomain: this.props.captchaDomain, siteKey: this.props.siteKey, action: this.props.action, onReceiveToken: (token) => {
                 this.props.onReceiveToken(token);
             } }));
     }
